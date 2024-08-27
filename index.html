@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Gichomo Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/871f4fa261.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class = "container">
+        <nav>
+            <img src = "" class="logo">
+            <ul>
+                <li><a href = #> Home</a></li>
+                <li><a href = #> About</a></li>
+                <li><a href = #> Services</a></li>
+                <li><a href = #> Portfolio</a></li>
+                <li><a href = #> Contact</a></li>
+            </ul>
+        </nav>
+        <div class ="header-text">
+            <p> Data Science</p>
+            <h1> Hi, I'm <span>Maria</span><br>Gichomo from Kenya</h1>
+        </div>
+    </div>
+</div>
+
+<!-- -----------about----------- -->
+
+<div id = "about">
+    <div class = "container">
+        <div class = "row">
+            <div class = "about-col-1">
+                <img src = images/Maria.jpeg alt="description" width="500" height="500">
+            </div>
+            <div class = "about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Tech fascinates me, from Website development to Data Science. 
+                   I love dogs and surrounding myself in nature.</p>
+
+            <div class="tab-titles">
+                <p class = "tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                <p class = "tab-links active-link" onclick="opentab('experience')"> Experience</p>
+                <p class = "tab-links active-link" onclick="opentab('education')"> Education</p>
+            </div> 
+
+           <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Web Development</span><br>Web app Development</li>
+                <li><span>Data Visualization</span><br>Visualzing data and creating reports</li>
+                <li><span>UI/UX</span><br>Designing Web/app interface</li>
+            </ul>
+
+            </div>
+            <div class="tab-contents" id ="experience">
+                <ul>
+                    <li><span>Data Science Intern</span><br></li>
+                    <li><span>Senses Hub</span><br></li>
+                    
+                </ul>
+    
+                </div>
+            
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Strathmore University</span><br></li>
+                    <li><span>Loreto Limuru</span><br></li>
+                    <li><span>High Peak Junior Academy</span><br></li>
+                </ul>
+    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!------------------services----------------- -->
+<div id ="services">
+    <div class = "container">
+        <h1 class = "sub-title">My Services</h1>
+         <div class = "services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <br>
+                <h2> Web Design</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <a href ="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <br>
+                <h2> Data Analysis</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <a href ="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-uikit"></i>
+                <br>
+                <h2> UI/UX</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <a href ="#">Learn more</a>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+<!------------------portfolio----------------- -->
+<div id = 'portfolio'>
+    <div class ="container">
+        <h1 class = "sub-title"> My Work</h1>
+        <div class = "work-list">
+            <div class ="work">
+                <img src="">
+            </div>
+            <div class ="work">
+                <img src="">
+            </div>
+            <div class ="work">
+                <img src="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");   
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    
+</body>
+</html>
