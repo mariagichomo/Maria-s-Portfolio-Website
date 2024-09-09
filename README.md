@@ -1,1 +1,2 @@
-<h1>Maria's Portfolio</h1>
+<h1>Welcome to My Portfolio</h1>
+<p>This website is a showcase of my skills, experiences, and the projects I’ve had the opportunity to work on. I’m passionate about leveraging my expertise to create impactful solutions. Here, you’ll find a collection of my past work. You can also learn more about my background, areas of specialization, and how to get in touch with me. Explore how my skills and experience can contribute to exciting new projects! </p>
